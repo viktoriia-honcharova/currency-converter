@@ -1,0 +1,16 @@
+<header>
+  <div class="header-content">
+    <h1>Currency Converter</h1>
+    <div class="currency-rates">
+      <div class="currency">
+        <span>USD: </span>
+        <span>{{ usdToUah | number : "1.2-2" }}</span>
+      </div>
+      <div class="currency">
+        <span>EUR: </span>
+        <span>{{ eurToUah | number : "1.2-2" }}</span>
+      </div>
+    </div>
+    <button (click)="uppdateRates()">Оновити курси</button>
+  </div>
+</header>
